@@ -1,4 +1,3 @@
-// src/components/pages/FavoritesPage.jsx
 import React, { useState } from "react";
 import { useFavorites } from "../../context/FavoritesContext";
 import { FiX } from "react-icons/fi";
@@ -25,9 +24,9 @@ export default function FavoritesPage() {
         <p>No favorites yet. Click the heart on any artwork to save it here.</p>
       ) : (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {favorites.map((art) => (
+          {favorites.map((art, index) => (
             <div
-              key={art.id}
+              key={art.id ?? index} // use art.id if available, otherwise fallback to index
               onClick={() => setSelectedArtwork(art)}
               className="relative overflow-hidden bg-white rounded-lg shadow-lg"
             >
@@ -58,6 +57,7 @@ export default function FavoritesPage() {
                   e.stopPropagation();
                   removeFavorite(art.id);
                 }}
+                aria-label="Remove from favorites"
                 className="absolute p-1 transition rounded-full top-2 right-2 bg-white/80 hover:bg-white"
               >
                 <FiX className="w-4 h-4 text-gray-700" />
