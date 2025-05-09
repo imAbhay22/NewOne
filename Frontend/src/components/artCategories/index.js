@@ -1,0 +1,26 @@
+// src/components/artCategories/index.js
+export { default as PaintingsPage } from "./PaintingsPage";
+export { default as Drawing } from "./Drawing";
+export { default as OilPainting } from "./OilPainting";
+export { default as Watercolor } from "./Watercolor";
+export { default as Sketch } from "./Sketch";
+export { default as DigitalArt } from "./DigitalArt";
+export { default as Photography } from "./Photography";
+export { default as MixedMedia } from "./MixedMedia";
+export { default as Collage } from "./Collage";
+export { default as AbstractArt } from "./AbstractArt";
+export { default as Impressionism } from "./Impressionism";
+export { default as PopArt } from "./PopArt";
+export { default as Minimalism } from "./Minimalism";
+export { default as ConceptualArt } from "./ConceptualArt";
+export { default as Printmaking } from "./Printmaking";
+export { default as AcrylicPainting } from "./AcrylicPainting";
+export { default as PortraitPainting } from "./PortraitPainting";
+export { default as LandscapePainting } from "./LandscapePainting";
+export { default as ModernArt } from "./ModernArt";
+export { default as StreetArt } from "./StreetArt";
+export { default as Realism } from "./Realism";
+export { default as Surrealism } from "./Surrealism";
+export { default as AIArt } from "./AIArt";
+export { default as VectorArt } from "./VectorArt";
+export { default as TraditionalArt } from "./TraditionalArt";
